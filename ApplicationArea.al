@@ -18,7 +18,7 @@ pageextension 50120 CustomerListExt extends "Customer List"
     var
         EnableExampleExt: Codeunit EnableExampleExtension;
     begin
-        if EnableExampleExt.IsExampleAppAreaEnabled then
+        if EnableExampleExt.IsExampleAppAreaEnabled() then
             Message('Example App Area is working!');
     end;
 }
@@ -59,7 +59,7 @@ codeunit 50124 EnableExampleExtension
     begin
         AppAreaSetup.FindFirst();
         AppAreaSetup."Example App Area" := true;
-        AppAreaSetup.Modify;
+        AppAreaSetup.Modify();
     end;
 }
 
@@ -83,9 +83,9 @@ codeunit 50125 InstallExampleExtension
     var
         EnableExampleExt: Codeunit EnableExampleExtension;
     begin
-        if (EnableExampleExt.IsExampleAppAreaEnabled) then exit;
+        if (EnableExampleExt.IsExampleAppAreaEnabled()) then exit;
 
-        EnableExampleExt.EnableExampleAppArea;
+        EnableExampleExt.EnableExampleAppArea();
 
         //
     end;
