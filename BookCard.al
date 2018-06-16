@@ -21,7 +21,7 @@ page 50100 BookCard
             }
             group(Details)
             {
-                caption = 'My Book Details';    
+                caption = 'Detail';    
                 field(Author;Author)
                 {
                     ApplicationArea = All;
@@ -29,7 +29,7 @@ page 50100 BookCard
                 field(Hardcover;Hardcover)
                 {
                     ApplicationArea = All;
-                }                                    
+                }
                 field("Page count";"Page count")
                 {
                     ApplicationArea = All;
