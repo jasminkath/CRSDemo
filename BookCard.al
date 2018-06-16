@@ -21,7 +21,7 @@ page 50100 BookCard
             }
             group(Details)
             {
-                caption = 'Book Details';    
+                caption = 'Details';    
                 field(Author;Author)
                 {
                     ApplicationArea = All;
