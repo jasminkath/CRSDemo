@@ -1,0 +1,24 @@
+{
+  "id": "a0f38c90-8313-47ae-a0d1-cca576c782e5",
+  "name": "Bookshelf 1.0",
+  "publisher": "Cloud Ready Software",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "12.0.0.0",
+  "application": "12.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  },
+  "showMyCode": true,
+  "features":["TranslationFile"]
+}

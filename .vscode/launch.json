@@ -1,0 +1,16 @@
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "navserver",
+            "server": "https://jazzbc.northeurope.cloudapp.azure.com",
+            "serverInstance": "nav",
+            "authentication": "UserPassword",
+            "startupObjectId": 50101,
+            "startupObjectType": "Page",
+            
+        }
+    ]
+}
