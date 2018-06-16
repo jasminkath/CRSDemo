@@ -2,7 +2,7 @@ codeunit 50122 DemoNotification
 {
 
   var
-    NotificationTxt : label 'Customer balance exceeds credit limit';
+    NotificationTxt : Label 'Customer balance exceeds credit limit';
     NotificationDescTxt : Label 'Balance of customer is larger than the credit limit';
 
   [EventSubscriber(ObjectType::Page, Page::"Sales Order", 'OnOpenPageEvent', '', false, false)]
@@ -19,7 +19,7 @@ codeunit 50122 DemoNotification
     IF Customer."Credit Limit (LCY)" = 0 THEN
       EXIT;
 
-    IF NOT MyNotifications.IsEnabledForRecord(GetMyNotificationID,Customer) THEN
+    IF NOT MyNotifications.IsEnabledForRecord(GetMyNotificationID(),Customer) THEN
       EXIT;
 
     Customer.CalcFields("Balance (LCY)");

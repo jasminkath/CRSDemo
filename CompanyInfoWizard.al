@@ -1,7 +1,7 @@
 page 50120 CompanyInfoWizard {
     PageType = NavigatePage;
     SourceTable = "Company Information";
-    CaptionML = ENU='Company Information';
+    Caption= 'Company Information';
 
     layout
     {
@@ -33,8 +33,8 @@ page 50120 CompanyInfoWizard {
                 Visible = CurrentStep = 1;
                 group(CompanyName)
                 {
-                    CaptionML = ENU='Company Name';
-                    InstructionalTextML = ENU='Provide the name of your company';
+                    Caption = 'Company Name';
+                    InstructionalText = 'Provide the name of your company';
                     field(Name;Name)
                     {
                         ApplicationArea = All;
@@ -98,7 +98,7 @@ page 50120 CompanyInfoWizard {
             action(ActionFinish)
             {
                 ApplicationArea = All;
-                CaptionML = ENU='Finish';
+                Caption = 'Finish';
                 Enabled = ActionFinishAllowed;
                 Image = Approve;
                 InFooterBar = true;
@@ -113,13 +113,13 @@ page 50120 CompanyInfoWizard {
 
     trigger OnInit()
     begin
-        LoadTopBanners;
+        LoadTopBanners();
     end;
 
     trigger OnOpenPage()
     begin
         CurrentStep := 1;
-        SetControls;
+        SetControls();
     end;
 
     var
