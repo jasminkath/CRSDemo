@@ -6,7 +6,7 @@ codeunit 50121 CompanyInfoNotification
     CompanyInformation : Record 79;
     TheNotification : Notification;
   begin
-    IF CompanyInformation.GET THEN
+    IF CompanyInformation.GET() THEN
       IF (CompanyInformation.Name <> '') AND (CompanyInformation."E-Mail" <> '') THEN
         EXIT;
 
@@ -14,7 +14,7 @@ codeunit 50121 CompanyInfoNotification
     TheNotification.Scope := NotificationScope::LocalScope;
     TheNotification.Message := 'Company information is missing.';
     TheNotification.AddAction('Open Company Information',50121,'ShowCompanyInfoWizard');
-    TheNotification.Send;
+    TheNotification.Send();
   end;
 
   procedure ShowCompanyInfoWizard(TheNotification : Notification);

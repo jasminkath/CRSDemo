@@ -9,7 +9,7 @@ codeunit 50120 CompanyInfoAssistedSetup
     TempAggregatedAssistedSetup.AddExtensionAssistedSetup(PAGE::CompanyInfoWizard,
                                                           'Setup Company Information',
                                                           TRUE,
-                                                          CompanyInformation.RECORDID,
+                                                          CompanyInformation.RECORDID(),
                                                           GetCompanyInformationSetupStatus(TempAggregatedAssistedSetup),
                                                           '');
   end;
@@ -25,7 +25,7 @@ codeunit 50120 CompanyInfoAssistedSetup
     CompanyInformation : Record "Company Information";
   begin
     WITH AggregatedAssistedSetup DO BEGIN
-      IF CompanyInformation.GET THEN
+      IF CompanyInformation.GET() THEN
         IF (CompanyInformation.Name = '') OR (CompanyInformation."E-Mail" = '') THEN
           Status := Status::"Not Completed"
         ELSE
