@@ -33,6 +33,7 @@ page 50100 BookCard
                 field("Page count";"Page count")
                 {
                     ApplicationArea = All;
+                    Enabled = true;
                 }
             }
         }
