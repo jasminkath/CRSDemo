@@ -4,7 +4,7 @@ codeunit 50103 DotNetBookshelfWrappers
     begin
        //MyTextDemo(); 
        //MyListDemo();
-       DebugSomethign();
+       DebugSomething();
 
     end;
     
@@ -38,7 +38,7 @@ begin
     message(my_label,myList.IndexOf('Jane'));
 end;
 
-local procedure DebugSomethign()
+local procedure DebugSomething()
 var
     myInt: Integer;
     sillyvar : Integer;

@@ -18,17 +18,17 @@
         </trans-unit>
         <trans-unit id="Table 1606545787 - Field 2842729223 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
           <source>Author</source>
-          <target state="new"></target>
+          <target state="translated">Autor</target>
           <note from="Xliff Generator" annotates="general" priority="3">Table:Book - Field:Author</note>
         </trans-unit>
         <trans-unit id="Table 1606545787 - Field 3902073686 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
           <source>Hardcover</source>
-          <target state="new"></target>
+          <target state="translated">Bokbind</target>
           <note from="Xliff Generator" annotates="general" priority="3">Table:Book - Field:Hardcover</note>
         </trans-unit>
         <trans-unit id="Table 1606545787 - Field 952629284 - Property 3830149458" size-unit="char" translate="yes" xml:space="preserve">
           <source>Page Count</source>
-          <target state="new"></target>
+          <target state="translated">Antall sider</target>
           <note from="Xliff Generator" annotates="general" priority="3">Table:Book - Field:Page count</note>
         </trans-unit>
         <trans-unit id="Codeunit 4106345359 - Method 4014612943 - NamedType 171047807" size-unit="char" translate="yes" xml:space="preserve">

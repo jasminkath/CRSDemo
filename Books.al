@@ -51,7 +51,8 @@ page 50101 BookList
       {
         ApplicationArea = All;
 
-        trigger OnAction()begin
+        trigger OnAction()
+        begin
           Codeunit.Run(50103);
         end;
       }
