@@ -29,7 +29,7 @@ page 50100 BookCard
                 field(Hardcover;Hardcover)
                 {
                     ApplicationArea = All;
-                }
+                }                                    
                 field("Page count";"Page count")
                 {
                     ApplicationArea = All;
