@@ -4,7 +4,7 @@ trigger OnRun()
 var day : Date;
 begin 
     day := Today();
-    Message('Today is %1',day);
+    Message('Today is my %1',day);
 end;
 
 } 
