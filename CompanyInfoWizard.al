@@ -46,7 +46,7 @@ page 50120 CompanyInfoWizard {
                 Visible = CurrentStep = 2;
                 group(EmailAddress)
                 {
-                    CaptionML=ENU='Email Address';
+                    Caption ='Email Address';
                     field("E-Mail";"E-Mail")
                     {
                         ApplicationArea = All;
